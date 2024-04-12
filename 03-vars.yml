@@ -17,3 +17,9 @@
 
 #playlevel variable can be accessed by all the tasks
 #tasklevel variables can accessed only by the task
+#role level variable can be accessed in that role tasks
+#varoiable from cli having higher precedence of any variable
+
+
+#IMP if the value of any key is the variable the "" it
+#ex: msg: {{url}} this needs to be given like this ex: msg"{{URL}}"
