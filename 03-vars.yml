@@ -11,7 +11,7 @@
         msg: URL_PLAY - {{ URL_PLAY }}
       vars:
         URL_TASK: tasks.example.com
-- roles:
+        roles:
     - demo
 
 #playlevel variable can be accessed by all the tasks
