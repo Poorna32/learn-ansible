@@ -8,10 +8,11 @@
         msg: URL_PLAY - {{ URL_PLAY  }}
     - name: task variable
       ansible.builtin.debug:
-        msg: URL_PLAY - {{ URL_PLAY }}
+        msg: URL_TASK - {{ URL_TASK }}
       vars:
         URL_TASK: tasks.example.com
-        roles:
+
+  roles:
     - demo
 
 #playlevel variable can be accessed by all the tasks
