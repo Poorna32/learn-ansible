@@ -1,0 +1,12 @@
+- name: demo on tags
+  hosts: localhost
+  tasks:
+    - name: Print Vegetables
+      ansible.builtin.debug:
+        msg: vegetables
+      tags: vegetables
+
+    - name: Print fruits
+      ansible.builtin.debug:
+        msg: fruits
+      tags: fruits
