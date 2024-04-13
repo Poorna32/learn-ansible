@@ -12,6 +12,18 @@
       vars:
         URL_TASK: tasks.example.com
 
+#store result of a task to OUTPUT variable
+    - name: demo
+      ansible.builtin.shell: uptime
+      register: OUTPUT
+
+
+#retrive the output variable
+    - name: print OUTPUT of previous task
+      ansible.builtin.debug:
+        msg: "{{ OUTPUT }}"
+
+
   roles:
     - demo
 
