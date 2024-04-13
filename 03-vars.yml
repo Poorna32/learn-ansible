@@ -23,6 +23,11 @@
       ansible.builtin.debug:
         msg: "{{ OUTPUT }}"
 
+#retrive the output of variable using json query
+    - name: print OUTPUT of previous with only output of shell command
+      ansible.builtin.debug:
+        msg: "{{ OUTPUT.stdout }}"
+
 
   roles:
     - demo
