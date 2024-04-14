@@ -1,0 +1,7 @@
+- name: Ansible Filters
+  hosts: local hosts
+  tasks:
+    - name: Print
+      ansible.builtin.debug:
+        msg: YES we need to install
+      when: install
